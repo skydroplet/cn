@@ -26,7 +26,7 @@
 
 登录直播控制台，进入“域名管理”页面，在域名后点击“停用”可对当前域名进行停用操作，请确认目前该组域名下没有推拉流任务，避免影响线上业务
 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/4%E7%BB%91%E5%AE%9Acname%E5%9C%B0%E5%9D%80.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/4%E6%96%B0%E5%BB%BA%E5%9F%9F%E5%90%8D4.png)
 
 ## 4.域名删除
 

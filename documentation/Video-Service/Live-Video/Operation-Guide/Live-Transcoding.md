@@ -14,15 +14,16 @@ http://域名/{AppName}/{StreamName}_码率标识.m3u8。
 
 登录直播控制台，进入“模板管理”-“转码模板管理”页面，查看“通用转码模板”，查看以下系统预制转码模板是否符合您的转码需求，如果满足，则无需再创建新模板，在转码配置中直接调用相应模板即可。   
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/9%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png)  
-如果预制转码模板不能满足您的转码需求，请在“自定义转码模板”页面，点击“添加转码模板”，按照您的实际转码输出需求，填写相应的转码视频、音频参数，点击“立即创建”即可成功创建转码模板。创建成功的转码模板会展示在转码模板列表当中。 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/10%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png) 
+如果预制转码模板不能满足您的转码需求，请在、进入“自定义转码模板”页面
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/10%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png)
+点击“添加转码模板”，按照您的实际转码输出需求，填写相应的转码视频、音频参数，点击“立即创建”即可成功创建转码模板。创建成功的转码模板会展示在转码模板列表当中。  
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/11%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png) 
 
 ## 步骤2.新建转码配置  
 
 在控制台左侧菜单栏点击“域名管理”，找到需要做转码配置的直播域名组，点击“管理”，进入“转码配置”页面。
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/12%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)
-在转码配置页面，点击“新建转码配置”，选择“全部AppName”则配置对于所有APP也就是对于整个域名生效，如果自定义指定AppName，则需要填入需要配置转码的APP名称，并可以继续选择生效范围为“全部StreamName”或自定义指定StreamName，如果自定义指定StreamName，则需要填入需要配置转码的StreamName名称。然后选择相应的转码模板，转码模板可以单选、多选。转码配置创建完成后，在转码配置列表即可看到刚才创建的转码规则。此条配置对于新推的直播流生效。
+在转码配置页面，点击“新建转码配置”，选择“全部AppName”则配置对于所有APP也就是对于整个域名生效，如果自定义指定AppName，则需要填入需要配置转码的APP名称，并可以继续选择生效范围为“全部StreamName”或自定义指定StreamName，如果自定义指定StreamName，则需要填入需要配置转码的StreamName名称。然后选择相应的转码模板，转码模板可以单选、多选。点击“立即创建”，即可完成转码配置。转码配置创建完成后，在转码配置列表即可看到刚才创建的转码规则。此条配置对于新推的直播流生效。
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/13%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)  
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/14%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png) 
 在转码配置列表中，AppName列的ALL表示刚刚创建的转码配置对于所有AppName生效即对于域名级别生效，StreamName列的ALL表示刚刚创建的转码配置对于所有StreamName生效，即对于APP级别生效。

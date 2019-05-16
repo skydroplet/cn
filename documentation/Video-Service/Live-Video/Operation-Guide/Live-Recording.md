@@ -1,53 +1,30 @@
 # 直播录制
 
-视频直播服务支持录制功能，可以把视频流录制成文件，存放到对象存储中，要使用此功能需要开通京东云的对象存储服务，并在华北区域（目前视频直播只支持华北）创建对应的Bucket空间，当直播结束后会自动生成文件，客户可以根据存储路径查看和下载视频文件。
 
-直播录制模板按照应用名称（AppName）来区分，同一个应用名称（AppName）下的所有流都按照当前模板设置的参数来进行录制。
+视频直播服务支持录制功能，可以把直播流录制成文件，存放在直播内部存储中。当直播结束后会按录制规则自动生成文件，客户可以在录制管理中查看需要的文件。
 
-如设置模板时填写的AppName为test，那么test下面所有的流都会执行录制操作，同时会按照test模板设置的参数生成视频文件。
+直播转码的配置分为两个步骤：1.创建转码模板；2.添加转码配置。   
+系统为您预设了标准质量模板，如果不能满足您的转码需求，请先新建转码模板后再添加域名转码配置，转码配置完成后，对于新推上来的直播流生效。转码配置可绑定域名、APP、流三个级别，配置按最小粒度生效，举例：对于域名rtmp://abc.com/live/123，可在APP“live”级绑定转码模板A，在流“123”级绑定转码模板B，那么A模板对于APP“live”下除“123”外的其他所有流都生效，B模板对于流“123”生效。
 
-## 1.新建模板
+## 步骤1.新建录制模板
 
-登录直播控制台，进入“域名管理”页面，选择要查看播放地址的一组域名，点击右侧的“管理”进入域名配置页，点击“录制配置”切换到录制模板管理页面
+登录直播控制台，进入“模板管理”-“转码模板管理”页面，查看“通用转码模板”，查看以下系统预制转码模板是否符合您的转码需求，如果满足，则无需再创建新模板，在转码配置中直接调用相应模板即可。   
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/9%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png)  
+如果预制转码模板不能满足您的转码需求，请进入“自定义转码模板”页面添加自定义转码模板。
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/10%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png)
+点击“添加转码模板”，按照您的实际转码输出需求，填写相应的转码视频、音频参数，点击“立即创建”即可成功创建转码模板。创建成功的转码模板会展示在转码模板列表当中。  
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/11%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png) 
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/live-video/%E7%9B%B4%E6%92%AD%E5%BD%95%E5%88%B6-%E9%A1%B5%E9%9D%A2%E5%88%87%E6%8D%A2.png)
+## 步骤2.新建录制配置  
 
-在录制配置页面，点击“新建模板”，在弹出的窗口中填写对应的参数信息，点“确定”完成录制模板的添加。
+在控制台左侧菜单栏点击“域名管理”，找到需要做转码配置的直播域名组，点击“管理”，进入“转码配置”页面。
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/12%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)
+在转码配置页面，点击“新建转码配置”，进入转码配置页面：
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/13%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)  
+选择“全部AppName”则配置对于所有APP也就是对于整个域名生效，如果自定义指定AppName，则需要填入需要配置转码的APP名称，并可以继续选择生效范围为“全部StreamName”或自定义指定StreamName，如果自定义指定StreamName，则需要填入需要配置转码的StreamName名称。然后选择相应的转码模板，转码模板可以单选、多选。点击“立即创建”，即可完成转码配置。转码配置创建完成后，在转码配置列表即可看到刚才创建的转码规则。此条配置对于新推的直播流生效。
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/14%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png) 
+在转码配置列表中，AppName列的ALL表示刚刚创建的转码配置对于所有AppName生效即对于域名级别生效，StreamName列的ALL表示刚刚创建的转码配置对于所有StreamName生效，即对于APP级别生效。
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/15%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)   
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/live-video/%E7%9B%B4%E6%92%AD%E5%BD%95%E5%88%B6-%E6%96%B0%E5%BB%BA%E6%A8%A1%E6%9D%BF%E6%8C%89%E9%92%AE.png)
+## 录制管理  
 
-模板参数说明如下：
-
-![](https://github.com/jdcloudcom/cn/blob/edit/image/live-video/%E7%9B%B4%E6%92%AD%E5%BD%95%E5%88%B6-%E6%96%B0%E5%BB%BA%E6%A8%A1%E6%9D%BF.png)
-
-**App
-Name**：要进行直播录制的应用名称，目前仅支持英文，数字，“-”，"_","长度需要在1-50字符之间
-
-**存储位置**：录制视频文件要存放的位置，如果为空请先点击“新建存储”在跳转的页面中创建Bucket空间
-
-**周期长度**：视频文件录制的时长，范围在15-360分钟，如果超过6小时，系统会自动生成一个新的视频文件
-
-**录制格式**：生成视频的文件格式，目前只支持flv
-
-**存储路径**：录制文件详细的存放目录，系统会根据客户设置的Bucket自动生成对应的文件存储目录
-
-record/{Date}/{DomainName}/{AppName}/{StreamName}/{StartTime}_{EndTime}.flv
-
--   {Date} 将录制文件按照日期进行文件夹分类，默认日期格式为“年-月-日”。
-
--   {DomainName} 客户配置的推流域名
-
--   {APPName}可自动获取您推流的AppName名称作为存储路径，若需更改，更改{APPName}
-    即可，目前仅支持英文、数字、“-”、"_",长度需要在1-50字符之间
-
--   {StreamName} 可自动获取您推流的 StreamName
-    名称作为存储路径，若需更改，更改{streamName}
-    即可，目前仅支持英文、数字、“-”、"_",长度需要在1-50字符之间
-
--   {StartTime} 为录制开始时间，{EndTime} 为录制结束时间
-
-## 2.删除模板
-
-登录直播控制台，进入“录制配置”页面，在想要删除的录制模板右侧点击“删除”，在弹出的窗口中点“确认”完成删除操作。
-
-![](https://github.com/jdcloudcom/cn/blob/edit/image/live-video/%E7%9B%B4%E6%92%AD%E5%BD%95%E5%88%B6-%E6%A8%A1%E6%9D%BF%E5%88%A0%E9%99%A4.png)

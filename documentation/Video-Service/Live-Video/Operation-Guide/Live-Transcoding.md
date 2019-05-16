@@ -16,6 +16,7 @@ http://域名/{AppName}/{StreamName}_码率标识.m3u8。
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/9%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png)  
 如果预制转码模板不能满足您的转码需求，请在“自定义转码模板”页面，点击“添加转码模板”，按照您的实际转码输出需求，填写相应的转码视频、音频参数，点击“立即创建”即可成功创建转码模板。创建成功的转码模板会展示在转码模板列表当中。 
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/10%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/11%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png) 
 
 ## 步骤2.新建转码配置  
 

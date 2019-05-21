@@ -88,7 +88,8 @@ status:状态[success]<br>
 	"beginTime": 1553741853968,<br/>
 	"endTime": 1553741935867,<br/>
 	"event": "record_done",<br/>
-	"downloadUrl": "http://s3.cn-north-1.jcloudcs.com/jd-video-formal/record/20190319/57/live/62caee8d6c595e9441be/20190319175419_20190319175422.flv "<br/>
+	"downloadUrl": "http://s3.cn-north-1.jcloudcs.com/jd-video-formal/record/20190319/57/live/<br>
+	    62caee8d6c595e9441be/20190319175419_20190319175422.flv "<br/>
 	“status": "success"<br/>
 	}<br/>
 </td>
@@ -126,7 +127,8 @@ downloadUrl:可下载地址<br>
 	"endTime": "1553228747300"<br>
 	}<br>
 	],<br>
-	"downloadUrl": "http://s3.cn-north-1.jcloudcs.com/ngwcloud1oss/record/20190322/jdpush.jd.com/live/347031/20190322122547_20190322173152.mp4”,<br>
+	"downloadUrl": "http://s3.cn-north-1.jcloudcs.com/ngwcloud1oss/record/20190322/jdpush.jd.com<br>
+	    /live/347031/20190322122547_20190322173152.mp4”,<br>
 	"taskExternalId": "163594946396839936"<br>
 	}<br>
 </td>
@@ -151,7 +153,8 @@ vodTaskId: 录制外部ID<br>
 	"appName": "jw",<br>
 	"streamName": "210235T85E3188001452",<br>
 	"snapshotTime": 1553826618026,<br>
-	"downloadUrl": "http://s3.cn-north-1.jcloudcs.com/jd-video-formal/snapshot/20190328/43/jw/210235T85E3188001452.jpg",<br>
+	"downloadUrl": "http://s3.cn-north-1.jcloudcs.com/jd-video-formal/<br>
+	    snapshot/20190328/43/jw/210235T85E3188001452.jpg",<br>
 	"status": "success"<br>
 	}<br>
 </td>

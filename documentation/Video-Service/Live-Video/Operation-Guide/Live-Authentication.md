@@ -143,7 +143,11 @@ signature = md5sum("/video/standard/1K.html-1592409600-0-0-jdcloud1234") =06d97b
 http://cdn.example.com/video/standard/1K.html ?fa=121&jd=121&auth_token=1592409600-0-0-06d97bc9e43ded48d991994006cfa127  
 
 计算出来的 signature 与用户请求中带的 signature =06d97bc9e43ded48d991994006cfa127值一致，于是鉴权通过。  
+
 ### 播放IP黑名单  
+播放IP黑名单功能可以指定到具体IP，禁止其访问直播平台内容。  
+配置规则与推流IP黑名单相同。  
+
 ### Referer防盗链  
 
 

@@ -28,77 +28,30 @@
 
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/19%E5%9B%9E%E8%B0%83%E9%85%8D%E7%BD%AE.png)
 
-## 3.回调说明
 
-**描述**
 
-回调接口是京东直播平台对事件的通知机制，目前支持推流开始、推流结束、自动录制结束、打点录制结束、截图完成等事件；如客户需要回调功能则需要支持如下的回调格式。
+## 通知回调信息样例
 
-**说明**
-
-1.  原理：通过 HTTP 接口向用户服务器发送 POST
-    请求，将相关信息状态实时反馈给用户，用户服务器通过 200
-    响应返回接口返回结果。
-
-2.  客户需要开启相应状态，并正确设置回调URL，并且URL能正常访问。
-
-**格式说明**
-
-domain: 客户推流域名
-
-app: 客户自定义的应用名称
-
-stream：客户自定义的流名
-
-event：为事件名，包含以下几种定义
-
-publish_started：推流开始
-
-publish_done：推流结束
-
-record_started：录制开始
-
-record_done：录制结束
-
-record_part_started：录制分片开始
-
-record_part_done：录制分片结束
-
-status：事件是否成功，success成功，fail失败
-
-errorMsg：在status=fail的情况描述失败原因
-
-url：录制分片存储的位置，存储路径如下bucket name/record/{Date}/{DomainName}/{AppName}/{StreamName}/StartTime}_{EndTime}.flv其中bucketname为客户选择的对象存储空间位置，Date为获取的当前日期，AppName客户自定义的应用名称，StreamName客户自定义额流名称，StartTime录制开始时间，EndTime录制结束时间
-
-duration：录制分片的时长
-
-startTime：分片的开始时间
-
-stopTime：分片的结束时间
-
-**返回示例**
-
-{
-
- "domain": " push.test.com",
-
- "app": "appname",
-
- "stream": "streamname",
-
- "event": " RECORD_PART_DONE ",
-
- "status": "sucess",
-
- "url": "
-bucketname/record/20180423/push.test.com/app/live/20180423174942_20180423180942.flv
-",
-
-"duration": "32",
-
-"startTime": " 1524476982 ",
-
-"stopTime": " 1524477014 ",
-
-}
-
+<table>
+<tr>
+    <td>类型<br/>
+    <td>消息体</td>
+    <td>消息字段说明</td>
+</tr>
+<tr>
+    <td>推流开始回调<br/>
+    <td> {<br>  
+        "version": "v1.1",<br>  
+        "publishDomain": "push.yourdomain.com",<br>   
+        "appName": "live",<br> "streamName": "350802", <br>"event": "publish_started",<br> "status": "success", <br>"clientIp": "12.11.112.34", <br>"eventTime": 12312312312, <br>"pushParams": { <br>"a": "aaa",<br> "b": "bbb",<br> "c": "ccc"<br> }<br> }<br> 
+</td>
+    <td>version:消息体版本号<br>  
+publishDomain:推流域名<br>  
+appName:应用名称<br>  
+streamName:流名称<br>  
+event:事件[publish_started,publish_ ]done, record_done<br>  
+status:状态[success]<br>  
+eventTime:触发时间,毫秒数<br>  
+pushParams:推流参数<br></td>
+</tr>
+</table>

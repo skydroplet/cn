@@ -1,6 +1,6 @@
 ## 1.推流控制  
 ### 推流鉴权设置  
-推流鉴权功能旨在保护用户站点的不被不合法主播推流，由客户站点提供给用户加密
+推流鉴权功能旨在校验主播推流的合法性，由客户站点提供给用户加密
 URL（包含权限验证信息），用户使用加密后的 URL 向服务器发起请求，服务器对加密 URL
 中的权限信息进行验证以判断请求的合法性，对合法推流请求给予正常响应，拒绝非法请求，从而有效保护客户站点直播内容。  
 首先进入直播控制台，点击“域名管理”，找到需要配置推流鉴权的域名组，点击“管理”
@@ -80,9 +80,69 @@ http:// cdn.example.com/sports/football?auth_key=1444435200-0-0-80cd3862d699b711
 8eed99103f2a3a4f 值一致，于是鉴权通过。
 
 ### 推流IP黑名单  
-## 2.播放控制     
+推流IP黑名单功能可以指定到具体IP，禁止其向直播平台推流。  
+如需配置推流IP黑名单，可在“访问控制”页面，找到“推流控制”-“IP黑名单”，点击修改配置
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/23%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
+点击开启，按规则填写IP，点击确定即可配置成功
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/24%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
+
+## 2.播放控制  
+
 ### 播放鉴权设置  
+播放鉴权功能旨在保护用户站点的不被非法盗用，由客户站点提供给用户加密
+URL（包含权限验证信息），用户使用加密后的 URL 向服务器发起请求，服务器对加密 URL
+中的权限信息进行验证以判断请求的合法性，对合法请求给予正常响应，拒绝非法请求，从而有效保护客户站点直播内容。  
+播放鉴权设置步骤与推流鉴权设置步骤相同。  
+
 ### 播放鉴权规则  
+ 
+**加密URL构成**
+
+http://DomainName/Path/Filename?参数&auth_token=expire-uniqid-rand-signature  
+
+signature =md5sum("uri-expire-uniqid-rand-private_key")  
+
+**鉴权字段描述**
+
+| **字段**  | **描述**                                                                                                  |
+|-----------|-----------------------------------------------------------------------------------------------------------|
+| expire | 失效时间，10位整型整数。|
+|uniqid    | 整型，随机数，唯一id，不使用时设置成0即可。该字段可以用来标记身份或业务，用户可自行设定   |                                         
+|rand      | 整型，随机数，一般设置成0。可以使用生成token时的时间戳作为rand                           |
+|signature   | 字符串，通过md5算法计算出的验证串，数字和小写英文字母混合0-9a-z，固定长度32，不区分大小写。|
+|uri   | 是用户的请求对象相对地址，不包含参数。|
+|private_key  | 用户自定义的秘钥（8-32个字符）。|  
+
+**原理说明**  
+
+CDN服务器拿到请求后，首先会判断请求中的 expire 是否小于当前时间，如果小于，则认为过期失效并返回HTTP 403错误。如果 expire 大于当前时间，则构造出一个同样的字符串(参考以下signature构造方式)。然后使用MD5算法算出 new_signature ，再和请求中带来的 signature 进行比对。比对结果一致，则认为鉴权通过，返回文件。否则鉴权失败，返回HTTP 403错误。  
+
+new_signature 是通过以下字符串计算出来的：  
+
+origin_signature = "uri-expire-uniqid-rand-private_key "（uri是用户的请求对象相对地址，不包含参数）  
+
+new_signature = md5sum(origin_ signature)  
+
+**示例说明**  
+
+通过请求对象:  
+http://cdn.example.com/video/standard/1K.html?fa=121&jd=121  
+
+密钥设为：jdcloud1234 (由用户自行设置)  
+
+鉴权配置文件失效日期为：2020年06月18日00:00:00,计算出来的秒数为1592409600  
+
+则CDN服务器会构造一个用于计算signature的签名字符  
+
+/video/standard/1K.html-1592409600-0-0-jdcloud1234  
+
+CDN服务器会根据该签名字符串计算signature:  
+signature = md5sum("/video/standard/1K.html-1592409600-0-0-jdcloud1234") =06d97bc9e43ded48d991994006cfa127  
+
+则请求时url为：  
+http://cdn.example.com/video/standard/1K.html ?fa=121&jd=121&auth_token=1592409600-0-0-06d97bc9e43ded48d991994006cfa127  
+
+计算出来的 signature 与用户请求中带的 signature =06d97bc9e43ded48d991994006cfa127值一致，于是鉴权通过。  
 ### 播放IP黑名单  
 ### Referer防盗链  
 

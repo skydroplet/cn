@@ -24,7 +24,6 @@ URL（包含权限验证信息），用户使用加密后的 URL 向服务器发
 
 ![](https://github.com/jdcloudcom/cn/blob/cn-live-video/image/live-video/%E7%9B%B4%E6%92%AD%E9%89%B4%E6%9D%83-%E9%89%B4%E6%9D%83%E4%BF%A1%E6%81%AF%E6%A8%A1%E6%9D%BF%E9%A1%B5.png)
 
-## 2.播放控制  
 
 
 

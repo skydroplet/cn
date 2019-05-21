@@ -54,4 +54,114 @@ status:状态[success]<br>
 eventTime:触发时间,毫秒数<br>  
 pushParams:推流参数<br></td>
 </tr>
+<tr>
+    <td>推流结束回调<br/>
+    <td> 
+	{<br/>
+	"version": "v1.1",<br/> 
+	"publishDomain": "push.yourdomain.com",<br/>
+	"appName": "live",<br/>
+	"streamName": "350802",<br/>
+	"event": "publish_done",<br/>
+	"status": "success",<br/>
+	"eventTime": 12312312312<br/>
+	}<br/>
+</td>
+    <td>version:消息体版本号<br>  
+publishDomain:推流域名<br>  
+appName:应用名称<br>  
+streamName:流名称<br>  
+event:事件[publish_started,publish_ ]done, record_done<br>  
+status:状态[success]<br>  
+</td>
+</tr>
+<tr>
+    <td>自动录制回调<br/>
+    <td> {<br/>
+	"version": "v1.1",<br/>
+	"publishDomain": "push.yourdomain.com",<br/>
+	"appName": "live",<br/>
+	"streamName": "350802",<br/>
+	"format": "flv",<br/>
+	"duration": "18439.0",<br/>
+	"fileSize": "6007851133",<br/>
+	"beginTime": 1553741853968,<br/>
+	"endTime": 1553741935867,<br/>
+	"event": "record_done",<br/>
+	"downloadUrl": "http://s3.cn-north-1.jcloudcs.com/jd-video-formal/record/20190319/57/live/62caee8d6c595e9441be/20190319175419_20190319175422.flv "<br/>
+	“status": "success"<br/>
+	}<br/>
+</td>
+    <td>version:消息体版本号<br>  
+publishDomain:推流域名<br>  
+appName:应用名称<br>  
+streamName:流名称<br>  
+event:事件[publish_started,publish_ ]done, record_done<br>  
+status:状态[success]<br>
+format:录制格式<br>
+startTime:录制开始时间<br>
+stopTime:录制结束时间<br>
+downloadUrl:可下载地址<br>  
+</td>
+</tr>
+<tr>
+    <td>打点录制回调<br/>
+    <td>{<br>
+	"version": "v1.1",<br>
+	"publishDomain": "push.yourdomain.com",<br>
+	"appName": "live",<br>
+	"streamName": "350802",<br>
+	"duration": "18439.0",<br>
+	"event": "record_done",<br>
+	"fileSize": "6007851133",<br>
+	"format": "flv",<br>
+	"status": "success",<br>
+	"group": [<br>
+	{<br>
+	"beginTime": "1553228747000",<br>
+	"endTime": "1553228747100"<br>
+	},<br>
+	{<br>
+	"beginTime": "1553228747200",<br>
+	"endTime": "1553228747300"<br>
+	}<br>
+	],<br>
+	"downloadUrl": "http://s3.cn-north-1.jcloudcs.com/ngwcloud1oss/record/20190322/jdpush.jd.com/live/347031/20190322122547_20190322173152.mp4”,<br>
+	"taskExternalId": "163594946396839936"<br>
+	}<br>
+</td>
+    <td>version:消息体版本号<br>  
+publishDomain:推流域名<br>  
+appName:应用名称<br>  
+streamName:流名称<br>  
+event:事件[publish_started,publish_ ]done, record_done<br>  
+status:状态[success]<br>
+duration:录制文件时长(毫秒)<br>
+fileSize:文件大小(kb)<br>
+group:录制时间段<br>
+downloadUrl:可下载地址<br>
+vodTaskId: 录制外部ID<br>  
+</td>
+</tr>
+<tr>
+    <td>截图回调<br/>
+    <td>{<br>
+	"version": "v1.1",<br>
+	"publishDomain": "push.yourdomain.com",<br>
+	"appName": "jw",<br>
+	"streamName": "210235T85E3188001452",<br>
+	"snapshotTime": 1553826618026,<br>
+	"downloadUrl": "http://s3.cn-north-1.jcloudcs.com/jd-video-formal/snapshot/20190328/43/jw/210235T85E3188001452.jpg",<br>
+	"status": "success"<br>
+	}<br>
+</td>
+    <td>version:消息体版本号<br>  
+publishDomain:推流域名<br>  
+appName:应用名称<br>  
+streamName:流名称<br>  
+snapshotTime:截图文件生成时间<br>  
+downloadUrl:可下载地址<br>
+status:状态[success]<br>
+</td>
+</tr>
 </table>

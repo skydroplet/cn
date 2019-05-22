@@ -4,12 +4,12 @@
 URL（包含权限验证信息），用户使用加密后的 URL 向服务器发起请求，服务器对加密 URL
 中的权限信息进行验证以判断请求的合法性，对合法推流请求给予正常响应，拒绝非法请求，从而有效保护客户站点直播内容。  
 首先进入直播控制台，点击“域名管理”，找到需要配置推流鉴权的域名组，点击“管理”
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/12%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)  
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/12%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)  
 进入“访问控制”页面，“推流控制”中的“鉴权设置”默认为关闭状态，如需启用，请点击“修改配置”  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/20%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png)  
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/20%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png)  
 在“鉴权设置”弹出框中，填写您的key、以及鉴权过期时间，点击“确定”，“访问控制”页面展示鉴权设置为“开启”，推流鉴权配置即完成。
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/21%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png)  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/22%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/21%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png)  
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/22%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
 
 ### 推流鉴权规则  
 **鉴权URL组成**  
@@ -82,9 +82,9 @@ http:// cdn.example.com/sports/football?auth_key=1444435200-0-0-80cd3862d699b711
 ### 推流IP黑名单  
 推流IP黑名单功能可以指定到具体IP，禁止其向直播平台推流。  
 如需配置推流IP黑名单，可在“访问控制”页面，找到“推流控制”-“IP黑名单”，点击修改配置
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/23%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/23%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
 点击开启，按规则填写IP，点击确定即可配置成功
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/24%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/24%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
 
 ## 2.播放控制  
 
@@ -147,16 +147,16 @@ http://cdn.example.com/video/standard/1K.html ?fa=121&jd=121&auth_token=15924096
 ### 播放IP黑名单  
 播放IP黑名单功能可以指定到具体IP，禁止其访问直播平台内容。  
 如需配置播放IP黑名单，可在“访问控制”页面，找到“播放控制”-“IP黑名单”，点击修改配置
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/27%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/27%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
 点击开启，按规则填写IP，点击确定即可配置成功
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/28%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png)  
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/28%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png)  
 
 ### Referer防盗链  
 Referer防盗链功能可以指定来源referer，禁止或允许其访问直播平台内容。    
 如需配置referer防盗链，可在“访问控制”页面，找到“播放控制”-“Referer防盗链”，点击修改配置
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/25%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/25%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
 点击开启，按规则填写类型及规则，点击确定即可配置成功
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/26%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/26%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6.png) 
 
 
 

@@ -5,7 +5,7 @@
 登录直播控制台，进入“统计分析”-“用量查询”页面，“带宽流量”页可选择域名、appName、streamName、协议、区域、运营商查询带宽、流量。时间范围最大为30天。
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/48%E7%94%A8%E9%87%8F%E6%9F%A5%E8%AF%A2.png)
 ## 转码时长  
-进入“用量查询”-“转码时长”页，可选择分辨率区间及时间范围查询本组域名的转码时长。分辨率区间为：  
+进入“用量查询”-“转码时长”页，可选择分辨率区间及时间范围查询本组域名的转码时长。分辨率区间为：H.264-FHD：1920 x 1080 及以下；H.264-HD：1280 x 720及以下；H.264-SD：640 x 360及以下。 
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/49%E7%94%A8%E9%87%8F%E6%9F%A5%E8%AF%A2.png)
 ## 截图张数  
 进入“用量查询”-“截图张数”页，可选择时间范围查询本组域名的转码时长。

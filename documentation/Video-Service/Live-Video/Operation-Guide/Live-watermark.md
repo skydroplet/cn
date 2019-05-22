@@ -12,17 +12,17 @@
 
 登录直播控制台，进入“模板管理”-“水印模板管理”页面，点击“添加水印模板”  
 按照您的实际水印需求，填写相应的水印文件参数，点击“立即创建”即可成功创建水印模板。创建成功的水印模板会展示在水印模板列表当中。    
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/42%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%A8%A1%E6%9D%BF.png) 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/43%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%A8%A1%E6%9D%BF.png) 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/44%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%A8%A1%E6%9D%BF.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/42%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%A8%A1%E6%9D%BF.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/43%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%A8%A1%E6%9D%BF.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/44%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%A8%A1%E6%9D%BF.png) 
 ## 步骤2.新建水印配置  
 
 在控制台左侧菜单栏点击“域名管理”，找到需要做水印配置的直播域名组，点击“管理”，进入“水印配置”页面。  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/12%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/12%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)
 在水印配置页面，点击“新建水印配置”，进入水印配置页面：  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/45%E6%96%B0%E5%BB%BA%E6%B0%B4%E5%8D%B0%E9%85%8D%E7%BD%AE.png) 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/46%E6%96%B0%E5%BB%BA%E6%B0%B4%E5%8D%B0%E9%85%8D%E7%BD%AE.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/45%E6%96%B0%E5%BB%BA%E6%B0%B4%E5%8D%B0%E9%85%8D%E7%BD%AE.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/46%E6%96%B0%E5%BB%BA%E6%B0%B4%E5%8D%B0%E9%85%8D%E7%BD%AE.png)
 选择“全部AppName”则配置对于所有APP也就是对于整个域名生效，如果自定义指定AppName，则需要填入需要配置水印的APP名称，并可以继续选择生效范围为“全部StreamName”或自定义指定StreamName，如果自定义指定StreamName，则需要填入需要配置水印的StreamName名称。然后选择相应的水印模板。点击“立即创建”，即可完成水印配置。水印配置创建完成后，在水印配置列表即可看到刚才创建的水印配置规则。此条配置对于新推的直播流生效。    
 
 在水印配置列表中，AppName列的ALL表示刚刚创建的水印配置对于所有AppName生效即对于域名级别生效，StreamName列的ALL表示刚刚创建的水印配置对于所有StreamName生效，即对于APP级别生效。  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/47%E6%96%B0%E5%BB%BA%E6%B0%B4%E5%8D%B0%E9%85%8D%E7%BD%AE.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/47%E6%96%B0%E5%BB%BA%E6%B0%B4%E5%8D%B0%E9%85%8D%E7%BD%AE.png)

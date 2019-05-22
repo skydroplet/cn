@@ -9,20 +9,20 @@
 
 登录直播控制台，进入“模板管理”-“截图模板管理”页面，点击“添加截图模板”  
 按照您的实际截图需求，填写相应的截图文件参数，点击“立即创建”即可成功创建截图模板。创建成功的截图模板会展示在截图模板列表当中。    
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/35%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png) 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/36%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/37%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/35%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/36%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/37%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png) 
 
 ## 步骤2.新建截图配置  
 
 在控制台左侧菜单栏点击“域名管理”，找到需要做截图配置的直播域名组，点击“管理”，进入“截图配置”页面。  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/12%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/12%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)
 在截图配置页面，点击“新建截图配置”，进入截图配置页面：  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/38%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png) 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/39%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/38%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/39%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png)
 选择“全部AppName”则配置对于所有APP也就是对于整个域名生效，如果自定义指定AppName，则需要填入需要配置截图的APP名称，并可以继续选择生效范围为“全部StreamName”或自定义指定StreamName，如果自定义指定StreamName，则需要填入需要配置截图的StreamName名称。然后选择相应的截图模板。点击“立即创建”，即可完成截图配置。截图配置创建完成后，在截图配置列表即可看到刚才创建的截图配置规则。此条配置对于新推的直播流生效。    
 
 在截图配置列表中，AppName列的ALL表示刚刚创建的截图配置对于所有AppName生效即对于域名级别生效，StreamName列的ALL表示刚刚创建的截图配置对于所有StreamName生效，即对于APP级别生效。  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/40%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png)   
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/40%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png)   
 
 

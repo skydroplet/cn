@@ -4,7 +4,7 @@
 
 登录视频直播客户控制台，通过左侧菜单栏找到“视频服务”，点击“视频直播”子菜单，进入“域名管理”页面，点击“添加域名”
 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/1%E6%96%B0%E5%BB%BA%E5%9F%9F%E5%90%8D0.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/1%E6%96%B0%E5%BB%BA%E5%9F%9F%E5%90%8D0.png)
 
 在弹出的对话框中输入对应信息，点“确定”完成
 

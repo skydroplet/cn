@@ -41,7 +41,7 @@
 <tr>
     <td>编码方式<br/>
     <td>分辨率</td>
-    <td>价格（元/分钟）<= 30fps 输出</td>
+    <td>价格（元/分钟）<br><= 30fps 输出</td>
 </tr>
 <tr>
     <td rowspan="3">H.264<br/>

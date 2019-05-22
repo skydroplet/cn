@@ -10,19 +10,19 @@
 
 登录直播控制台，进入“模板管理”-“录制模板管理”页面，点击“添加录制模板”  
 按照您的实际录制需求，填写相应的录制文件参数，点击“立即创建”即可成功创建录制模板。创建成功的录制模板会展示在录制模板列表当中。    
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/29%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/30%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/31%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/29%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/30%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/31%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
 ## 步骤2.新建录制配置  
 
 在控制台左侧菜单栏点击“域名管理”，找到需要做录制配置的直播域名组，点击“管理”，进入“录制配置”页面。  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/12%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/12%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E9%85%8D%E7%BD%AE.png)
 在录制配置页面，点击“新建录制配置”，进入录制配置页面：  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/32%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/33%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/32%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/33%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png)
 选择“全部AppName”则配置对于所有APP也就是对于整个域名生效，如果自定义指定AppName，则需要填入需要配置录制的APP名称，并可以继续选择生效范围为“全部StreamName”或自定义指定StreamName，如果自定义指定StreamName，则需要填入需要配置录制的StreamName名称。然后选择相应的录制模板。点击“立即创建”，即可完成录制配置。录制配置创建完成后，在录制配置列表即可看到刚才创建的录制配置规则。此条配置对于新推的直播流生效。    
 
 在录制配置列表中，AppName列的ALL表示刚刚创建的录制配置对于所有AppName生效即对于域名级别生效，StreamName列的ALL表示刚刚创建的录制配置对于所有StreamName生效，即对于APP级别生效。  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/34%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png)   
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/34%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png)   
 
 
